@@ -22,6 +22,18 @@ body {
 
 ul {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
 a {
@@ -40,12 +52,32 @@ a {
 	color: var(--accent-cl);
 }
 
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Header */
+.header-container {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
 .accent-cl {
 	color: var(--accent-cl)
 }
 
 .logo {
+	margin-right: 93px;
+
 	font-family: var(--secondary-font);
 	font-weight: 700;
 	font-size: 26px;
@@ -53,19 +85,40 @@ a {
 	letter-spacing: 0.03em;
 }
 
-.nav {
+.nav-page {
+	display: flex;
+	align-items: center;
+
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
 
+.nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.nav-link,
+.contacs-link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
 .contacs {
+	display: flex;
+	margin-left: auto;
+
 	color: var(--secondary-txt-cl);
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+}
+
+.mail {
+	margin-right: 50px;
 }
 
 .nav-link:hover,
@@ -94,14 +147,19 @@ a {
 	text-transform: uppercase;
 }
 
-.btn {
+.main-btn {
+	min-width: 200px;
+	min-height: 50px;
+
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
 	cursor: pointer;
-
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: 0;
 	color: var(--wight-txt-cl);
 	background-color: var(--accent-cl);
 }
