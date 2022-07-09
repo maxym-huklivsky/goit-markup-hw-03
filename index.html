@@ -21,7 +21,7 @@
 	<header class="header">
 		<div class="container header-container">
 			<nav class="nav">
-				<a class="logo" href="./index.html"><span class="accent-cl">Web</span>Studio</a>
+				<a class="logo header-logo" href="./index.html"><span class="accent-cl">Web</span>Studio</a>
 				<ul class="nav-page">
 					<li class="nav-item"><a class="nav-link current" href="./index.html">Студия</a></li>
 					<li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
@@ -29,8 +29,10 @@
 				</ul>
 			</nav>
 			<ul class="contacs">
-				<li><a class="contacs-link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a class="contacs-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+				<li class="header-contacs-item"><a class="contacs-link header-contacs-link"
+						href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li class="header-contacs-item"><a class="contacs-link header-contacs-link" href="tel:+380961111111">+38 096
+						111 11 11</a></li>
 			</ul>
 		</div>
 	</header>
@@ -38,7 +40,7 @@
 	<main>
 		<!-- Герой -->
 		<section class="hero">
-			<div class="container">
+			<div class="container hero-container">
 				<h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
 				<button class="main-btn" type="button">Заказать услугу</button>
 			</div>
@@ -46,26 +48,26 @@
 
 		<!-- Наши качества -->
 		<section class="qualities">
-			<ul class="container">
-				<li>
+			<ul class="container qualities-container">
+				<li class="qualities-item">
 					<h3 class="qualities-title">Внимание к деталям</h3>
 					<p class="qualities-text">
 						Идейные соображения, а также начало повседневной работы по формированию позиции.
 					</p>
 				</li>
-				<li>
+				<li class="qualities-item">
 					<h3 class="qualities-title">Пунктуальность</h3>
 					<p class="qualities-text">
 						Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 					</p>
 				</li>
-				<li>
+				<li class="qualities-item">
 					<h3 class="qualities-title">Планирование</h3>
 					<p class="qualities-text">
 						Равным образом консультация с широким активом в значительной степени обуславливает.
 					</p>
 				</li>
-				<li>
+				<li class="qualities-item">
 					<h3 class="qualities-title">Современные технологии</h3>
 					<p class="qualities-text">
 						Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -76,38 +78,42 @@
 
 		<!-- Чем мы занимаемся -->
 		<section class="work">
-			<div class="container">
+			<div class="container work-container">
 				<h2 class="title">Чем мы занимаемся</h2>
-				<ul>
-					<li><img src="./images/img-1.jpg" alt="верстка сайтов" width="370" height="294" /></li>
-					<li><img src="./images/img-2.jpg" alt="оформление сайтов" width="370" height="294" /></li>
-					<li><img src="./images/img-3.jpg" alt="дизайн сайтов" width="370" height="294" /></li>
+				<ul class="work-list">
+					<li class="work-item"><img class="work-pic" src="./images/img-1.jpg" alt="верстка сайтов" width="370"
+							height="294" /></li>
+					<li class="work-item"><img class="work-pic" src="./images/img-2.jpg" alt="оформление сайтов" width="370"
+							height="294" />
+					</li>
+					<li class="work-item"><img class="work-pic" src="./images/img-3.jpg" alt="дизайн сайтов" width="370"
+							height="294" /></li>
 				</ul>
 			</div>
 		</section>
 
 		<!-- Наша команда -->
 		<section class="team">
-			<div class="container">
+			<div class="container team-container">
 				<h2 class="title">Наша команда</h2>
-				<ul>
-					<li>
-						<img src="./images/img-4.jpg" alt="автарка" width="270" height="260" />
+				<ul class="team-list">
+					<li class="team-item">
+						<img class="team-pic" src="./images/img-4.jpg" alt="автарка" width="270" height="260" />
 						<h3 class="team-title">Игорь Демьяненко</h3>
 						<p class="team-text">Product Designer</p>
 					</li>
-					<li>
-						<img src="./images/img-5.jpg" alt="автарка" width="270" height="260" />
+					<li class="team-item">
+						<img class="team-pic" src="./images/img-5.jpg" alt="автарка" width="270" height="260" />
 						<h3 class="team-title">Ольга Репина</h3>
 						<p class="team-text">Frontend Developer</p>
 					</li>
-					<li>
-						<img src="./images/img-6.jpg" alt="автарка" width="270" height="260" />
+					<li class="team-item">
+						<img class="team-pic" src="./images/img-6.jpg" alt="автарка" width="270" height="260" />
 						<h3 class="team-title">Николай Тарасов</h3>
 						<p class="team-text">Marketing</p>
 					</li>
-					<li>
-						<img src="./images/img-7.jpg" alt="автарка" width="270" height="260" />
+					<li class="team-item">
+						<img class="team-pic" src="./images/img-7.jpg" alt="автарка" width="270" height="260" />
 						<h3 class="team-title">Михаил Ермаков</h3>
 						<p class="team-text">UI Designer</p>
 					</li>
@@ -117,16 +123,17 @@
 	</main>
 
 	<footer class="footer">
-		<div class="container">
-			<a class="logo" href="./index.html"><span class="accent-cl">Web</span><span
+		<div class="container footer-container">
+			<a class="logo footer-logo" href="./index.html"><span class="accent-cl">Web</span><span
 					class="wight-txt-cl">Studio</span></a>
-			<address>
+			<address class="address">
 				<p class="footer-adress">
 					<a class="hover-adress" href="https://goo.gl/maps/ovAEWWDbUD2QsqMe8" target="_blank"
 						rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
 				</p>
 				<ul class="footer-contacs">
-					<li><a class="contacs-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li class="footer-contacs-item"><a class="contacs-link"
+							href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 					<li><a class="contacs-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
 				</ul>
 			</address>

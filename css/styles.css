@@ -46,6 +46,7 @@ a {
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 50px;
 }
 
 .current {
@@ -75,9 +76,11 @@ a {
 	color: var(--accent-cl)
 }
 
-.logo {
+.header-logo {
 	margin-right: 93px;
+}
 
+.logo {
 	font-family: var(--secondary-font);
 	font-weight: 700;
 	font-size: 26px;
@@ -100,10 +103,14 @@ a {
 }
 
 .nav-link,
-.contacs-link {
+.header-contacs-link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
+}
+
+.header-contacs-item:not(:last-child) {
+	margin-right: 50px;
 }
 
 .contacs {
@@ -115,10 +122,6 @@ a {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-}
-
-.mail {
-	margin-right: 50px;
 }
 
 .nav-link:hover,
@@ -137,8 +140,8 @@ a {
 }
 
 .main-title {
-	color: var(--wight-txt-cl);
 
+	color: var(--wight-txt-cl);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -170,7 +173,19 @@ a {
 }
 
 /* Qualities */
+.qualities-container {
+	display: flex;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.qualities-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .qualities-title {
+	margin-bottom: 10px;
+
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
@@ -186,14 +201,49 @@ a {
 }
 
 /* Work */
+.work-container {
+	padding-bottom: 94px;
+}
 
+.work-list {
+	display: flex;
+}
+
+.work-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.work-pic {
+	display: block;
+}
 
 /* Team */
+.team-container {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 .team {
 	background-color: var(--light-bg-cl);
 }
 
+.team-list {
+	display: flex;
+}
+
+.team-item:not(:last-child) {
+	margin-right: 30px;
+	padding-bottom: 30px;
+}
+
+.team-pic {
+	display: block;
+	margin-bottom: 30px;
+}
+
 .team-title {
+	margin-bottom: 10px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -247,7 +297,17 @@ a {
 	background-color: var(--dark-bg-cl);
 }
 
-address {
+.footer-container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-logo {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.address {
 	font-style: normal;
 }
 
@@ -256,8 +316,9 @@ address {
 }
 
 .footer-adress {
-	color: var(--wight-txt-cl);
+	margin-bottom: 9px;
 
+	color: var(--wight-txt-cl);
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -265,8 +326,11 @@ address {
 
 .footer-contacs {
 	color: rgba(255, 255, 255, 0.6);
-
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
+}
+
+.footer-contacs-item {
+	margin-bottom: 9px;
 }
