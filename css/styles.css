@@ -80,6 +80,11 @@ a {
 }
 
 /* Header */
+.header {
+	border-bottom: 1px solid #ECECEC;
+
+}
+
 .header-container {
 	display: flex;
 	align-items: center;
@@ -120,8 +125,7 @@ a {
 	margin-right: 50px;
 }
 
-.nav-link,
-.header-contacs-link {
+.nav-link {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
@@ -155,18 +159,12 @@ a {
 /* Hero */
 .hero {
 	background-color: var(--dark-bg-cl);
-}
-
-.hero-container {
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding: 200px 0;
 }
 
 .main-title {
-	margin-bottom: 30px;
 	width: 696px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 30px;
 
 	color: var(--wight-txt-cl);
 	font-weight: 900;
@@ -178,11 +176,10 @@ a {
 }
 
 .main-btn {
+	display: block;
 	min-width: 200px;
 	min-height: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+	margin: 0 auto;
 
 	font-family: inherit;
 	font-weight: 700;
@@ -203,10 +200,12 @@ a {
 }
 
 /* Qualities */
+.qualities {
+	padding: 94px 0;
+}
+
 .qualities-container {
 	display: flex;
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 .qualities-item:not(:last-child) {
@@ -231,7 +230,7 @@ a {
 }
 
 /* Work */
-.work-container {
+.work {
 	padding-bottom: 94px;
 }
 
@@ -248,13 +247,9 @@ a {
 }
 
 /* Team */
-.team-container {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
 .team {
 	background-color: var(--light-bg-cl);
+	padding: 94px 0;
 }
 
 .team-list {
@@ -264,14 +259,13 @@ a {
 }
 
 .team-item {
-	padding-bottom: 30px;
 	background-color: #fff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team-pic {
-	margin-bottom: 30px;
+.team-wrapper {
+	padding: 30px;
 }
 
 .team-title {
@@ -294,13 +288,8 @@ a {
 
 /*!!! portfolio.html */
 /* Portfolio */
-.header-portfolio {
-	border-bottom: 1px solid #ECECEC;
-}
-
-.portfolio-container {
-	padding-top: 94px;
-	padding-bottom: 94px;
+.portfolio {
+	padding: 94px 0;
 }
 
 .filter {
@@ -366,11 +355,7 @@ a {
 /* Footer */
 .footer {
 	background-color: var(--dark-bg-cl);
-}
-
-.footer-container {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding: 60px 0;
 }
 
 .footer-logo {
