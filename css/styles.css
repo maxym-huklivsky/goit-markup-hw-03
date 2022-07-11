@@ -242,10 +242,6 @@ a {
 	margin-right: 30px;
 }
 
-.work-pic {
-	display: block;
-}
-
 /* Team */
 .team {
 	background-color: var(--light-bg-cl);
