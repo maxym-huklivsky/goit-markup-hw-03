@@ -206,10 +206,11 @@ a {
 
 .qualities-container {
 	display: flex;
+	gap: 30px;
 }
 
-.qualities-item:not(:last-child) {
-	margin-right: 30px;
+.qualities-item {
+	width: 270px;
 }
 
 .qualities-title {
